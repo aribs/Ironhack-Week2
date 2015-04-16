@@ -1,0 +1,9 @@
+<h1> Ecommerce Platform </h1>
+<h2> List of Laptops</h2>
+<% @laptops.each do |laptop| %>
+<div><%= laptop.brand %>
+<%= laptop.model %>
+<%= laptop.processorBrand %>
+<%= laptop.ram %>
+<%= laptop.price %></div>
+<% end %>
