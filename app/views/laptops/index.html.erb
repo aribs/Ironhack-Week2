@@ -6,6 +6,8 @@
 <%= laptop.processorBrand %>
 <%= laptop.ram %>
 <%= laptop.price %></div>
+<%= link_to 'Edit', edit_laptop_path(laptop) %> <%= link_to 'Destroy', laptop_path(laptop), method: :delete, data: { confirm: 'Are you sure?'} %>
 <% end %>
-
+<div>
 <%= link_to 'New Laptop', new_laptop_path %>
+<div>

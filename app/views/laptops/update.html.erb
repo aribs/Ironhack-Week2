@@ -1,0 +1,20 @@
+<h1>Editing Laptops</h1>
+<%= form_for :laptop, url: laptop_path(laptop), method: :patch do |laptop| %>
+	<p>
+		<%= laptop.label :brand %>
+		<%= laptop.text_field :brand %>
+	<p>
+		<%= laptop.label :model %>
+		<%= laptop.text_field :model %>
+	<p>
+		<%= laptop.label :processorBrand %>
+		<%= laptop.text_field :processorBrand %>
+	<p>
+		<%= laptop.label :ram %>
+		<%= laptop.text_field :ram %>
+	<p>
+		<%= laptop.label :price %>
+		<%= laptop.text_field :price %>
+	<% end %>
+
+	<%= link_to 'Back', laptops_path%>
